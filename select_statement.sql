@@ -47,3 +47,24 @@ select top 3 * from BikeStores.sales.customers;
 select top 3 percent * from BikeStores.sales.customers; -- based on percentage
 
 -- Case with Select
+select * from BikeStores.production.products;
+
+select product_id
+      ,product_name
+      ,list_price
+	  ,case
+		when list_price > 400 then 'Expensive Bikes'
+		else 'Low budget Bikes'
+	   end as BikeCategory
+from BikeStores.production.products;
+
+select product_id
+      ,product_name
+      ,list_price
+	  ,case
+		when list_price > 999 then 'Expensive Bikes'
+		when list_price between 400 and 999 then 'Mid-ranga Bikes'
+		else 'Low budget Bikes'
+	   end as BikeCategory
+from BikeStores.production.products;
+

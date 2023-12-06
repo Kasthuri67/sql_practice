@@ -128,3 +128,15 @@ from BikeStores.sales.customers where phone is not null;
 select * from BikeStores.sales.customers where state IN ('NY', 'CA');
 
 select * from BikeStores.sales.customers where state NOT IN ('NY', 'TX');
+
+--While using the '+' operator for concatenation, if the 1st string is NULL while the 2nd string is not NULL, 
+--then combining(concatenating) these 2 strings will be NULL.
+select NULL + 'hello';
+
+select 'hello' + NULL;
+
+--While using the concat function for concatenation, if the 1st string is NULL while the 2nd string is not NULL, 
+--then combining(concatenating) these 2 strings will not be NULL.
+select concat(NULL, 'hello');
+
+select concat('hello', NULL);

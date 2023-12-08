@@ -1,0 +1,1 @@
+-- LIKE Operator with percent to match 0 or more Characters

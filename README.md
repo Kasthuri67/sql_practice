@@ -15,7 +15,7 @@
 | Operator | Description           |
 |----------|-----------------------|
 | &        | Bitwise AND           |
-| |        | Bitwise OR            |
+| \|       | Bitwise OR            |
 | ^        | Bitwise exclusive OR  |
 
 ### SQL Comparison Operators

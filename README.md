@@ -89,6 +89,7 @@ CASE
    ...
    [ELSE else_result]
 END
+```
 
 ### ROW_NUMBER() Function:
 

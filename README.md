@@ -82,6 +82,8 @@ The `CASE` expression in SQL provides a way to implement conditional logic withi
 
 #### Syntax:
 
+#### Syntax:
+
 ```sql
 CASE
    WHEN condition1 THEN result1

@@ -1,6 +1,6 @@
 # sql_practice
 
-# # SQL Arithmetic Operators
+## SQL Arithmetic Operators
 
 | Operator | Description |
 |----------|-------------|
@@ -10,7 +10,7 @@
 | /        | Divide      |
 | %        | Modulo      |
 
-# # SQL Bitwise Operators
+## SQL Bitwise Operators
 
 | Operator | Description           |
 |----------|-----------------------|
@@ -18,7 +18,7 @@
 | |        | Bitwise OR            |
 | ^        | Bitwise exclusive OR  |
 
-# # SQL Comparison Operators
+## SQL Comparison Operators
 
 | Operator | Description                  |
 |----------|------------------------------|
@@ -29,7 +29,7 @@
 | <=       | Less than or equal to        |
 | <>       | Not equal to                 |
 
-# # SQL Compound Operators
+## SQL Compound Operators
 
 | Operator | Description                  |
 |----------|------------------------------|
@@ -42,7 +42,7 @@
 | ^-=      | Bitwise exclusive equals     |
 | |*=      | Bitwise OR equals            |
 
-# # SQL Logical Operators
+## SQL Logical Operators
 
 | Operator | Description                                                   |
 |----------|---------------------------------------------------------------|

@@ -40,7 +40,7 @@
 | %=       | Modulo equals                |
 | &=       | Bitwise AND equals           |
 | ^-=      | Bitwise exclusive equals     |
-| |*=      | Bitwise OR equals            |
+| \|*=     | Bitwise OR equals            |
 
 ### SQL Logical Operators
 
@@ -64,9 +64,9 @@
 
 | Operator             | Description                         |
 |----------------------|-------------------------------------|
-| `UNION`, `UNION ALL` | Combine result sets                 |
-| `INTERSECT`          | Intersection of result sets         |
-| `EXCEPT`             | Set difference                      |
+| UNION, UNION ALL     | Combine result sets                 |
+| INTERSECT            | Intersection of result sets         |
+| EXCEPT               | Set difference                      |
 
 ### IS NULL / IS NOT NULL:
 

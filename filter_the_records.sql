@@ -103,6 +103,14 @@ select * from BikeStores.sales.orders where year(order_date) between '2017' and 
 
 select * from BikeStores.sales.orders where order_date between '2018-01-01' and '2018-05-01';
 
+-- IN Operator
+select * from BikeStores.sales.customers where state IN ('NY', 'CA');
+
+select * from BikeStores.sales.customers where state NOT IN ('NY', 'TX');
+
+-- All Operator
+select * from BikeStores.production.products where list_price > all (select avg(list_price) from BikeStores.production.products where list_price is not null);
+
 --cast function
 select order_date	
 	,cast(order_date as datetime) as timestamp
@@ -126,11 +134,6 @@ select concat(first_name, ' ', last_name) as FullName
 	,phone
 from BikeStores.sales.customers where phone is not null;
 
--- IN Operator
-
-select * from BikeStores.sales.customers where state IN ('NY', 'CA');
-
-select * from BikeStores.sales.customers where state NOT IN ('NY', 'TX');
 
 --While using the '+' operator for concatenation, if the 1st string is NULL while the 2nd string is not NULL, 
 --then combining(concatenating) these 2 strings will be NULL.

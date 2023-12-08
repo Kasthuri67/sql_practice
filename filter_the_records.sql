@@ -11,7 +11,7 @@ select * from BikeStores.sales.orders where year(order_date) = '2018';
 
 select * from BikeStores.sales.orders where order_date > '2018-05-01';
 
-select * from BikeStores.sales.orders where year(order_date) > '2017';
+select * from BikeStores.sales.orders where year(order_date) < '2017';
 
 select * from BikeStores.sales.customers;
 
@@ -21,14 +21,16 @@ select * from BikeStores.sales.customers where state != 'NY';
 
 select * from BikeStores.sales.orders where year(order_date) >= '2017';
 
--- Arithmetic Operators in where clause
-
 select * from BikeStores.sales.order_items;
 
 select * from BikeStores.sales.order_items where discount > 0.10;
 
+select * from BikeStores.sales.order_items where discount < 0.10;
+
 select * from BikeStores.sales.order_items where discount <> 0.10;
 
+
+-- Arithmetic Operators in where clause
 -- joining tables
 select pr.product_name
 	,oi.list_price
@@ -125,6 +127,7 @@ select concat(first_name, ' ', last_name) as FullName
 from BikeStores.sales.customers where phone is not null;
 
 -- IN Operator
+
 select * from BikeStores.sales.customers where state IN ('NY', 'CA');
 
 select * from BikeStores.sales.customers where state NOT IN ('NY', 'TX');

@@ -108,8 +108,11 @@ select * from BikeStores.sales.customers where state IN ('NY', 'CA');
 
 select * from BikeStores.sales.customers where state NOT IN ('NY', 'TX');
 
--- All Operator
+--All Operator
 select * from BikeStores.production.products where list_price > all (select avg(list_price) from BikeStores.production.products where list_price is not null);
+
+--Any Operator
+select * from BikeStores.production.products where list_price > any (select list_price from BikeStores.production.products where list_price> 4000);
 
 --cast function
 select order_date	
